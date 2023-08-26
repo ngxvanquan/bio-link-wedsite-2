@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
@@ -7,16 +14,29 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
 
 body {
 	height: 100vh;
-	background: linear-gradient(45deg, #153ca7, #640b7a);
+	
+	background-color: #85FFBD;
+background-image: -o-linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .card {
@@ -24,7 +44,9 @@ body {
 	height: 450px;
 	border-radius: 10px;
 	text-align: center;
-	background-color: #242628;
+	background-color: #8BC6EC; 
+	background-image: -o-linear-gradient(315deg, #8BC6EC 0%, #9599E2 100%); 
+	background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 	overflow: hidden; 
 	margin: 0 30px;
 }
@@ -33,9 +55,13 @@ body {
 	width: 120px;
 	height: 120px;
 	overflow: hidden;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
 	transition: 0.25s;
 	margin: 0 auto;
-	transform: translateY(25px);
+	-webkit-transform: translateY(25px);
+	    -ms-transform: translateY(25px);
+	        transform: translateY(25px);
 	border-radius: 10px;
 	border: 2px solid var(--pink-color);
 	cursor: pointer;
@@ -46,14 +72,18 @@ body {
 	height: 100%;
 	border-radius: unset;
 	border: unset;
-	transform: unset;
+	-webkit-transform: unset;
+	    -ms-transform: unset;
+	        transform: unset;
 }
 
 img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
 }
 
 h2 {
@@ -75,6 +105,8 @@ p {
 	margin: 25px 20px 40px;
 	display: inline-block;
 	font-size: 18px;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
 	transition: 0.25s;
 }
 
@@ -91,6 +123,8 @@ button {
 	padding: 10px 20px;
 	border-radius: inherit;
 	cursor: pointer;
+	-webkit-transition: 0.25s;
+	-o-transition: 0.25s;
 	transition: 0.25s;
 }
 
@@ -105,6 +139,5 @@ button:hover {
 	background-color: var(--pink-color);
 	color: pink;
 }
-
 
 
